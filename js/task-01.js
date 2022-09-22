@@ -1,7 +1,15 @@
-const ulCategories = document.querySelectorAll('.item');
+const categoriesListRef = document.querySelector("#categories");
+const categoriesRef = document.querySelectorAll('.item');
 
-for(const element of ulCategories){
- 
-    console.log(element.children[0].textContent)
-    console.log(element.children[1].children.length)
+for(const element of categoriesRef){
+
+    console.log(`Category: ${element.querySelector("h2").textContent}`);
+    console.log(`Elements: ${element.querySelectorAll("li").length}`);
 }
+
+
+
+
+
+
+// 

@@ -8,6 +8,6 @@ loginFormRef.addEventListener("submit", (event)=>{
     }
     formInfo.email = email.value
     formInfo.password = password.value
-    formInfo.reset
+    loginFormRef.reset()
     console.log(formInfo)
 })
