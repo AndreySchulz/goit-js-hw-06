@@ -5,6 +5,7 @@ loginFormRef.addEventListener("submit", (event)=>{
     const {elements: {email, password}}= event.currentTarget;
     if(email.value=== "" || password.value === ""){
         alert("все поля должны быть заполнены.")
+        return
     }
     formInfo.email = email.value
     formInfo.password = password.value
